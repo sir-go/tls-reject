@@ -8,8 +8,11 @@ class Payload:
         return self.__raw[self.__offset:]
 
     def __repr__(self):
-        l = len(self.get_bytes())
+        payload_len = len(self.get_bytes())
         return '<Payload len: {}, data: "{}">'.format(
-            l,
-            '{} ... {}'.format(self.get_bytes()[:4], self.get_bytes()[-4:]) if l > 8 else self.get_bytes()
-        ) if l > 0 else '<Payload None>'
+            payload_len,
+            '{} ... {}'.format(
+                self.get_bytes()[:4],
+                self.get_bytes()[-4:]
+            ) if payload_len > 8 else self.get_bytes()
+        ) if payload_len > 0 else '<Payload None>'

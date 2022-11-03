@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 
 https_domains.txt
+.*cache
