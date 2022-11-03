@@ -24,10 +24,10 @@ Environment variables:
 | BLOCK_OUT_IF       | output interface name              |
 
 
-### Install & Run
+### Install -> Test -> Run
 ```bash
 virtualenv venv
 source ./venv/bin/activate
 pip install -r requirements.txt
-python reject.py
+python -m pytest && python reject.py
 ```
