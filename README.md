@@ -1,3 +1,5 @@
+[![Tests](https://github.com/sir-go/tls-reject/actions/workflows/python-app.yml/badge.svg)](https://github.com/sir-go/tls-reject/actions/workflows/python-app.yml)
+
 ## Traffic reject by TLS SNI
 
 This is a part of the parental control system. 
